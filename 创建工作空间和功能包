@@ -1,5 +1,29 @@
+#同一空间下不能出现同名功能包
 scr 代码空间
 build 编译空间
 devel 开发空间
 install 安装空间
 
+创建工作空间
+$mkdir -p ~/catkin_ws/src
+$cd ~/catkin_ws/src
+$catkin_init_workspace
+
+编译工作空间
+$cd ~/catkin_ws
+$catkin_make
+
+设置环境变量
+$source devel/setup.bash
+
+检查环境变量
+$echo $ROS_PACKAGE_PATH
+
+创建功能包
+$cd ~/catkin_ws
+$catkin_create_pkg std_msgs roscpp rospy
+
+编译功能包
+$cd ~/catkin_ws
+$catkin_make
+$source ~/catkin_ws/devel/setup.bash
