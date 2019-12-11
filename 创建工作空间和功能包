@@ -20,10 +20,14 @@ $source devel/setup.bash
 $echo $ROS_PACKAGE_PATH
 
 创建功能包
-$cd ~/catkin_ws
-$catkin_create_pkg std_msgs roscpp rospy
+$cd ~/catkin_ws/src
+$catkin_create_pkg 创建文件的名字 std_msgs roscpp rospy 。。。（依赖包）
+将代码放进~/catkin_ws/src/上面创建的文件名称/src
 
 编译功能包
 $cd ~/catkin_ws
 $catkin_make
 $source ~/catkin_ws/devel/setup.bash
+
+python创建发布者和订阅者连接
+https://blog.csdn.net/zong596568821xp/article/details/78088394###
