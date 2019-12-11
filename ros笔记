@@ -52,7 +52,7 @@ https://blog.csdn.net/zong596568821xp/article/details/78088394###
 
 cmakelists.txt
 1.设置需要编译的代码和生成的可执行文件
-add_exectable(节点的名字 scr/节点的名字.py)
+add_executable(节点的名字 scr/节点的名字.py)
 2.设置连接库
 target_link_libraries(节点的名字${catkin_LIBRARIES})
 
