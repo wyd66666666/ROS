@@ -29,6 +29,17 @@ $cd ~/catkin_ws
 $catkin_make
 $source ~/catkin_ws/devel/setup.bash
 
+12.6
+一些基本的操作
+roscore
+rosnode list 查看节点
+rosnode info  查看节点信息
+rostopic  list 查看话题
+rostopic pub 话题 tab键  发布指令
+rosmsg show 话题  话题结构体
+rosservice list 服务列表
+rqt_graph  以图的形式显示关系
+
 12.11
 python创建发布者和订阅者连接
 https://blog.csdn.net/zong596568821xp/article/details/78088394###
@@ -39,7 +50,7 @@ https://blog.csdn.net/zong596568821xp/article/details/78088394###
 3.创建消息数据
 4.按照一定频率循环发布消息
 
-cmakelists.txt(c++文件需要 python不知道)
+cmakelists.txt
 1.设置需要编译的代码和生成的可执行文件
 add_exectable_publisher 相对路径下的文件名
 2.设置连接库
