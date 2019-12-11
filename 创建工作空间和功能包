@@ -31,3 +31,15 @@ $source ~/catkin_ws/devel/setup.bash
 
 python创建发布者和订阅者连接
 https://blog.csdn.net/zong596568821xp/article/details/78088394###
+
+如何实现一个发布者
+1.初始化ros节点
+2.向ros master注册节点信息，包括发布的话题名和话题中的消息类型
+3.创建消息数据
+4.按照一定频率循环发布消息
+
+cmakelists.txt
+1.设置需要编译的代码和生成的可执行文件
+add_exectable_publisher 相对路径下的文件名
+2.设置连接库
+target_link_libraries(...)
