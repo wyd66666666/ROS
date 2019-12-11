@@ -21,7 +21,7 @@ $echo $ROS_PACKAGE_PATH
 
 创建功能包
 $cd ~/catkin_ws/src
-$catkin_create_pkg 创建文件的名字 std_msgs roscpp rospy 。。。（依赖包）
+$catkin_create_pkg+创建文件的名字+std_msgs roscpp rospy 。。。（依赖包）
 将代码放进~/catkin_ws/src/上面创建的文件名称/src
 
 编译功能包
@@ -29,6 +29,7 @@ $cd ~/catkin_ws
 $catkin_make
 $source ~/catkin_ws/devel/setup.bash
 
+12.11
 python创建发布者和订阅者连接
 https://blog.csdn.net/zong596568821xp/article/details/78088394###
 
@@ -38,8 +39,15 @@ https://blog.csdn.net/zong596568821xp/article/details/78088394###
 3.创建消息数据
 4.按照一定频率循环发布消息
 
-cmakelists.txt
+cmakelists.txt(c++文件需要 python不知道)
 1.设置需要编译的代码和生成的可执行文件
 add_exectable_publisher 相对路径下的文件名
 2.设置连接库
 target_link_libraries(...)
+
+编译并运行
+$cd ~/catkin_ws
+$catkin_make
+$source devel/setup.bash
+$roscore
+$ros run +节点名称
