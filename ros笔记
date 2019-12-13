@@ -62,3 +62,6 @@ $catkin_make
 $source devel/setup.bash
 $roscore
 $ rosrun pkg_name node_name（python加.py）
+
+12.13
+https://blog.csdn.net/qq_42145185/article/details/80404096
