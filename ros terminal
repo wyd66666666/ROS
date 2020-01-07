@@ -1,0 +1,18 @@
+ 426  sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+  427  sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+  428  sudo apt update
+  429  sudo apt install ros-melodic-desktop-full
+  430  sudo rosdep init
+  431  rosdep update
+  432  echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+  433  source ~/.bashrc
+  434  sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential
+  435  roscore
+  436  cd /
+  437  cd opt
+  438  ls
+  439  cd
+  440  roscore
+  441  rosrun turtlesim turtlesim_node
+  442  rosrun turtlesim turtle_teleop_key
+  443  rosrun
