@@ -19,10 +19,16 @@ $source devel/setup.bash
 检查环境变量
 $echo $ROS_PACKAGE_PATH
 
-创建功能包
+①创建功能包
 $cd ~/catkin_ws/src
 $catkin_create_pkg+创建文件的名字(pkg_name)+std_msgs roscpp rospy 。。。（依赖包）
 将代码放进~/catkin_ws/src/上面创建的文件名称(pkg_name)/src
+
+②msg
+$cd 创建文件的名字(pkg_name)/
+$mkdir msg
+$cd msg
+$vi 名字.msg（.msg用来存放数据类型（变量类型 变量名））
 
 编译功能包
 $cd ~/catkin_ws
