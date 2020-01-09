@@ -153,6 +153,10 @@ include_directories(
 add_executable(Vector3_talker src/talker.cpp)
 add_dependencies(Vector3_talker geometry_msgs_generate_messages_cpp)
 target_link_libraries(Vector3_talker ${catkin_LIBRARIES})
+
+add_executable(Vector3_listener src/listener.cpp)
+add_dependencies(Vector3_listener geometry_msgs_generate_messages_cpp)
+target_link_libraries(Vector3_listener ${catkin_LIBRARIES})
 #############
 ## Install ##
 #############

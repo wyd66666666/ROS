@@ -42,3 +42,6 @@ $rosrun turtlesim turtlesim_node
 $source ~/catkin_ws/devel/setup.bash
 $rosrun learning_topic Vector3_talker
 
+$source ~/catkin_ws/devel/setup.bash
+rosrun learning_topic Vector3_listener
+
