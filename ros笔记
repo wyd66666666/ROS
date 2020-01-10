@@ -73,3 +73,6 @@ $ rosrun pkg_name node_name（python加.py）
 https://blog.csdn.net/qq_42145185/article/details/80404096
 
 https://cloud.tencent.com/developer/article/1386928
+
+$ echo "source ~/catkin_ws/devel/setup.bash" >>  ~/.bashrc
+$ source ~/.bashrc
