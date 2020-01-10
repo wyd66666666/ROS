@@ -1,0 +1,78 @@
+#同一空间下不能出现同名功能包
+scr 代码空间
+build 编译空间
+devel 开发空间
+install 安装空间
+
+创建工作空间
+$mkdir -p ~/catkin_ws/src
+$cd ~/catkin_ws/src
+$catkin_init_workspace
+
+编译工作空间
+$cd ~/catkin_ws
+$catkin_make
+
+设置环境变量
+$source devel/setup.bash
+
+检查环境变量
+$echo $ROS_PACKAGE_PATH
+
+①创建功能包
+$cd ~/catkin_ws/src
+$catkin_create_pkg+创建文件的名字(pkg_name)+std_msgs roscpp rospy 。。。（依赖包）
+将代码放进~/catkin_ws/src/上面创建的文件名称(pkg_name)/src
+
+②msg
+$cd 创建文件的名字(pkg_name)/
+$mkdir msg
+$cd msg
+$vi 名字.msg（.msg用来存放数据类型（变量类型 变量名））
+
+编译功能包
+$cd ~/catkin_ws
+$catkin_make
+$source ~/catkin_ws/devel/setup.bash
+
+12.6
+一些基本的操作
+roscore
+rosnode list 查看节点
+rosnode info  查看节点信息
+rostopic  list 查看话题
+rostopic pub 话题 tab键  发布指令
+rosmsg show 话题  话题结构体
+rosservice list 服务列表
+rqt_graph  以图的形式显示关系
+
+12.11
+python创建发布者和订阅者连接
+https://blog.csdn.net/zong596568821xp/article/details/78088394###
+
+如何实现一个发布者
+1.初始化ros节点
+2.向ros master注册节点信息，包括发布的话题名和话题中的消息类型
+3.创建消息数据
+4.按照一定频率循环发布消息
+
+cmakelists.txt
+1.设置需要编译的代码和生成的可执行文件
+add_executable(节点的名字 scr/节点的名字.py)
+2.设置连接库
+target_link_libraries(节点的名字${catkin_LIBRARIES})
+
+编译并运行
+$cd ~/catkin_ws
+$catkin_make
+$source devel/setup.bash
+$roscore
+$ rosrun pkg_name node_name（python加.py）
+
+12.13
+https://blog.csdn.net/qq_42145185/article/details/80404096
+
+https://cloud.tencent.com/developer/article/1386928
+
+$ echo "source ~/catkin_ws/devel/setup.bash" >>  ~/.bashrc
+$ source ~/.bashrc

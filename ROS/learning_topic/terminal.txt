@@ -1,0 +1,47 @@
+$ cd ~/catkin_ws/src
+$ catkin_create_pkg learning_topic roscpp rospy std_msgs geometry_msgs turtlesim
+$ cd learning_topic/src/
+$ touch talker.cpp
+
+{
+jetbot@jetbot:~$ rostopic list
+/rosout
+/rosout_agg
+/turtle1/cmd_vel
+/turtle1/color_sensor
+/turtle1/pose
+jetbot@jetbot:~$ rostopic info /turtle1/cmd_vel
+
+Type: geometry_msgs/Twist
+
+Publishers: 
+ * /teleop_turtle (http://jetbot:43711/)
+
+Subscribers: 
+ * /turtlesim (http://jetbot:44903/)
+
+
+jetbot@jetbot:~$ 
+jetbot@jetbot:~$ rosmsg show geometry_msgs/Twist
+geometry_msgs/Vector3 linear
+  float64 x
+  float64 y
+  float64 z
+geometry_msgs/Vector3 angular
+  float64 x
+  float64 y
+  float64 z
+}
+
+$ cd ~/catkin_ws/
+$ catkin_make
+$source ~/catkin_ws/devel/setup.bash
+$roscore
+$rosrun turtlesim turtlesim_node
+
+$source ~/catkin_ws/devel/setup.bash
+$rosrun learning_topic Vector3_talker
+
+$source ~/catkin_ws/devel/setup.bash
+rosrun learning_topic Vector3_listener
+
