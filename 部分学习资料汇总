@@ -28,3 +28,5 @@ Python写ROS程序常用数据结构
     sensor_msgs
         JointState
         Imu
+
+ROS中有四种通信方式：Topic(话题)、Service(服务)、Parameter Serivce(参数服务器)、Actionlib(动作库)。
