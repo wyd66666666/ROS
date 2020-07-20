@@ -77,10 +77,16 @@ https://cloud.tencent.com/developer/article/1386928
 $ echo "source ~/catkin_ws/devel/setup.bash" >>  ~/.bashrc
 $ source ~/.bashrc
 
+###################################################
+rostopic list                   查看所有话题
 
+rostopic info 话题              查看话题的类型及信息
+
+rosmsg info 数据类型           查看数据结构体
 ###################################################
 rosservice list                   列出所有活动的服务
 
-rosservice type                查看某个服务的类型
+rosservice type  服务               查看某个服务的类型
 
 rosservice type 服务| rossrv show            查看某个服务类型具体输入什么类型的参数，返回什么类型的参数
+###################################################
