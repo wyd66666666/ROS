@@ -7,3 +7,24 @@ https://blog.csdn.net/weixin_42018112/article/details/82429883  （辅）
 12.20
 中国大学MOOC---《机器人操作系统入门》课程讲义
 https://sychaichangkun.gitbooks.io/ros-tutorial-icourse163/content/
+
+
+2020.7.20
+Python写ROS程序常用数据结构std_msgs、geometry_msgs、sensor_msgs
+https://blog.csdn.net/weixin_43956732/article/details/106003560
+Python写ROS程序常用数据结构
+
+    std_msgs
+        Float64MultiArray
+    geometry_msgs
+        Vector3
+        Twist
+        Wrench
+        Point
+        Quaternion
+        Pose
+        Pose2D
+        _Stamped
+    sensor_msgs
+        JointState
+        Imu
