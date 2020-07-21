@@ -90,3 +90,11 @@ rosservice type  服务               查看某个服务的类型
 
 rosservice type 服务| rossrv show            查看某个服务类型具体输入什么类型的参数，返回什么类型的参数
 ###################################################
+
+小海龟跟随
+sudo apt-get install ros-melodic-turtle-tf
+roslaunch turtle_tf turtle_tf_demo.launch
+rosrun turtlesim turtle_teleop_key 
+
+rosrun turtlesim turtle_teleop_key   查看tf树，会在当前目录下生成一个pdf文件
+rosrun tf tf_echo turtle1 turtle2    查看坐标等数
