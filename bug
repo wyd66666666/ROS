@@ -1,0 +1,2 @@
+rviz显示模型不正确
+sudo apt-get install ros-melodic-joint-state-publisher-gui
