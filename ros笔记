@@ -149,3 +149,32 @@ $ rosrun turtlesim turtlesim_node
 $ rosrun turtlesim turtle_teleop_key
 
 
+/*URDF机器人建模*/
+机器人描述格式
+（可以用solidworks进行建模然后转换成urdf模型具体步骤百度）
+link 连杆
+ 描述机器人某个刚体部分的外观和物理属性（尺寸 颜色 形状 惯性矩阵 碰撞参数）
+ <visual>:描述机器人link部分的外观参数
+ <inertial>:描述link的惯性参数
+ <collision>:描述link的碰撞属性
+joint 关节
+ 描述机器人关节的运动学和动力学属性（关节运动的位置和速度限制）
+ continuous 旋转关节，可以围绕单轴无限旋转
+ revolute 旋转关节，有旋转角度极限
+ prismatic 滑动关节，延某一轴线移动的关节，有位置极限
+ planar 平面关节，允许在平面正交方向上平移或旋转
+ floating 浮动关节，允许进行平移，旋转运动
+ fixed 固定关节 不能动
+ <calibration>:关节的参考位置，用来校准关节的绝对位置
+ <dynamics>:描述关节的物理属性，例如阻尼值，物体的静摩擦力，运动仿正中用到
+ <limit>:描述该关节与已有关节的关系
+ <safety_controller>:描述安全控制器参数
+
+
+cd到urdf文件夹中urdf_to_graphiz mo2.urdf 查看生成的模型是否正确
+
+URDF模型的进化版本--xacro模型文件
+ 精简模型代码
+ 提供可编程接口
+
+rosrun moveit_setup_assistant moveit_setup_assistant
