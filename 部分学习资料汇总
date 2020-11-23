@@ -30,3 +30,14 @@ Python写ROS程序常用数据结构
         Imu
 
 ROS中有四种通信方式：Topic(话题)、Service(服务)、Parameter Serivce(参数服务器)、Actionlib(动作库)。
+
+2020.11.23
+ros机械臂资料
+controller
+https://www.cnblogs.com/shawn0102/p/9021702.html（主要的）
+https://blog.csdn.net/Kalenee/article/details/80643189?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1.control#t5
+编写节点从ROS的FollowJointTrajectoryGoal主题订阅路径点数据
+https://blog.csdn.net/xjp13/article/details/79726841
+通过MoveIt!控制实体机械臂单片机层(arduino)
+https://blog.csdn.net/kalenee/article/details/80644896
+
