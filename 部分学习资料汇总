@@ -34,7 +34,7 @@ ROS中有四种通信方式：Topic(话题)、Service(服务)、Parameter Serivc
 
 2020.11.23
 ros机械臂资料
-controller
+controller：
 https://www.cnblogs.com/shawn0102/p/9021702.html（主要的）
 https://blog.csdn.net/Kalenee/article/details/80643189?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1.control#t5
 编写节点从ROS的FollowJointTrajectoryGoal主题订阅路径点数据
